@@ -10,7 +10,7 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private UpgradeDisplay prefab;
     private List<UpgradeDisplay> displays = new();
     private List<RectTransform> customs = new();
-    public void Awake()
+    private void Awake()
     {
         instance = this;
     }
@@ -22,7 +22,8 @@ public class UpgradeManager : MonoBehaviour
             displays[^1].SetUpgrade(upgrade);
         }
         displays[0].SetAvailability(true);
-        upgradeRoot.GetComponent<ScrollMagnet>().SetIndexes(0, upgrades.Count);
+        ScrollMagnet magnet = upgradeRoot.GetComponent<ScrollMagnet>();
+        magnet.SetUpMagnet(0, upgrades.Count - 1);
     }
     public void BuyUpgrade(UpgradeSO upgrade, long currentPrice)
     {

@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeName: Ugly Tallhat
   icon: {fileID: 21300000, guid: 55747e2f431f6204fb53b4f3922f5115, type: 3}
   description: +1<sprite name=cookie> per<sprite name=click>
-  price: 0
+  price: 10
   priceMultiplier: 1.8
   pos: {x: -50, y: 450}
   rotation: 20

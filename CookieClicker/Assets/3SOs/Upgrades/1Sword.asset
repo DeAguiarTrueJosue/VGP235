@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeName: Ugly Sword
   icon: {fileID: 21300000, guid: e7df365a2f5ecb34382886e3155844eb, type: 3}
   description: +2 <sprite name=cookie> per <sprite name=click>
-  price: 0
+  price: 100
   priceMultiplier: 2
   pos: {x: 300, y: -50}
   rotation: -45

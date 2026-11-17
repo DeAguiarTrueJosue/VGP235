@@ -9,7 +9,7 @@ public class Cookie : MonoBehaviour
     public float passiveMulti = 1;
     public float passivePerSecond = 0;
     public float passiveMultiPerSecond = 1;
-    [SerializeField] private float passiveTimer = 1;
+    private float passiveTimer = Mathf.Infinity;
     private void Awake()
     {
         instance = this;
@@ -20,7 +20,7 @@ public class Cookie : MonoBehaviour
     }
     private void Update()
     {
-        if (passiveTimer < 0)
+        while (passiveTimer < 0)
         {
             passiveTimer += 1f / (passivePerSecond * passiveMultiPerSecond);
 

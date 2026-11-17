@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81c545573251b9d43a672155df27e15d, type: 3}
-  m_Name: 2Shield
+  m_Name: 4Boots
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeSO
-  upgradeName: Shield
-  icon: {fileID: 21300000, guid: aa1eba5e8d8038a4cb6507d58309f4b3, type: 3}
-  description: +x1.1 <sprite name=cookie> per <sprite name=click>
-  price: 0
-  priceMultiplier: 2
-  pos: {x: -300, y: -50}
-  rotation: 25
-  pivot: {x: 0.5, y: 0.6}
-  size: {x: 500, y: 500}
+  upgradeName: Boots
+  icon: {fileID: 21300000, guid: c13a4e1a7b38ac64fb5d00d5d296334c, type: 3}
+  description: +4 <sprite name=cookie> per <sprite name=timer>
+  price: 100000
+  priceMultiplier: 2.5
+  pos: {x: 150, y: -400}
+  rotation: 15
+  pivot: {x: 0.5, y: 0.75}
+  size: {x: 400, y: 400}
   addPerClick: 0
-  addMultiPerClick: 0.1
-  addPerCheck: 0
+  addMultiPerClick: 0
+  addPerCheck: 4
   addMultiCheck: 0
   addCheckPerSecond: 0
   addMultiCheckPerSecond: 0
